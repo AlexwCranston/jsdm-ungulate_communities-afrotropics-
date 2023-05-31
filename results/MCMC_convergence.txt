@@ -1,0 +1,547 @@
+MCMC Convergennce statistics
+
+
+./models/models_thin_1_samples_5_chains_4_FINALRUN.Rdata
+
+
+Model.africa.PAsonly.10arcminutes_normal_FINALRUN
+
+
+beta
+
+Min.   : 0.984  
+1st Qu.: 1.854  
+Median : 2.519  
+Mean   : 3.089  
+3rd Qu.: 3.509  
+Max.   :16.710  
+
+gamma
+
+Min.   :1.572  
+1st Qu.:1.633  
+Median :2.306  
+Mean   :2.487  
+3rd Qu.:3.196  
+Max.   :3.644  
+
+omega
+
+
+ID
+
+Min.   :1.019  
+1st Qu.:1.981  
+Median :2.642  
+Mean   :3.062  
+3rd Qu.:3.881  
+Max.   :9.941  
+
+alpha
+
+
+
+ID
+
+1.340026
+NaN
+
+Model.africa.PAsonly.10arcminutes_OpenHabitats_FINALRUN
+
+
+beta
+
+Min.   : 1.082  
+1st Qu.: 2.241  
+Median : 3.293  
+Mean   : 3.815  
+3rd Qu.: 4.696  
+Max.   :18.056  
+
+gamma
+
+Min.   :1.514  
+1st Qu.:2.547  
+Median :4.462  
+Mean   :3.585  
+3rd Qu.:4.666  
+Max.   :5.325  
+
+omega
+
+
+ID
+
+Min.   : 1.516  
+1st Qu.: 2.634  
+Median : 3.973  
+Mean   : 4.424  
+3rd Qu.: 5.279  
+Max.   :24.290  
+
+alpha
+
+
+
+ID
+
+1.90723
+3.112402
+
+Model.africa.PAsonly.10arcminutes_TropicalForests_FINALRUN
+
+
+beta
+
+Min.   : 0.9539  
+1st Qu.: 2.1362  
+Median : 3.1531  
+Mean   : 4.1302  
+3rd Qu.: 5.2086  
+Max.   :23.5309  
+
+gamma
+
+Min.   :1.090  
+1st Qu.:1.550  
+Median :2.038  
+Mean   :2.484  
+3rd Qu.:3.157  
+Max.   :5.623  
+
+omega
+
+
+ID
+
+Min.   : 1.150  
+1st Qu.: 2.485  
+Median : 3.415  
+Mean   : 4.572  
+3rd Qu.: 5.227  
+Max.   :19.716  
+
+alpha
+
+
+
+ID
+
+2.928524
+4.122683
+
+./models/models_thin_1_samples_250_chains_4_FINALRUN.Rdata
+
+
+Model.africa.PAsonly.10arcminutes_normal_FINALRUN
+
+
+beta
+
+Min.   :1.003  
+1st Qu.:1.071  
+Median :1.151  
+Mean   :1.262  
+3rd Qu.:1.350  
+Max.   :2.726  
+
+gamma
+
+Min.   :1.021  
+1st Qu.:1.038  
+Median :1.048  
+Mean   :1.143  
+3rd Qu.:1.070  
+Max.   :1.702  
+
+omega
+
+
+ID
+
+Min.   :1.009  
+1st Qu.:1.103  
+Median :1.217  
+Mean   :1.263  
+3rd Qu.:1.356  
+Max.   :2.167  
+
+alpha
+
+
+
+ID
+
+1.057993
+1.57251
+NaN
+NaN
+NaN
+
+Model.africa.PAsonly.10arcminutes_OpenHabitats_FINALRUN
+
+
+beta
+
+Min.   : 1.009  
+1st Qu.: 1.157  
+Median : 1.308  
+Mean   : 1.711  
+3rd Qu.: 1.686  
+Max.   :13.097  
+
+gamma
+
+Min.   :1.035  
+1st Qu.:1.066  
+Median :1.117  
+Mean   :1.188  
+3rd Qu.:1.228  
+Max.   :1.539  
+
+omega
+
+
+ID
+
+Min.   :1.029  
+1st Qu.:1.408  
+Median :1.774  
+Mean   :2.145  
+3rd Qu.:2.456  
+Max.   :6.389  
+
+alpha
+
+
+
+ID
+
+1.175663
+8.053797
+NaN
+NaN
+NaN
+
+Model.africa.PAsonly.10arcminutes_TropicalForests_FINALRUN
+
+
+beta
+
+Min.   :1.019  
+1st Qu.:1.161  
+Median :1.322  
+Mean   :1.615  
+3rd Qu.:1.771  
+Max.   :5.518  
+
+gamma
+
+Min.   :1.027  
+1st Qu.:1.095  
+Median :1.125  
+Mean   :1.140  
+3rd Qu.:1.186  
+Max.   :1.255  
+
+omega
+
+
+ID
+
+Min.   :1.024  
+1st Qu.:1.409  
+Median :1.658  
+Mean   :2.259  
+3rd Qu.:2.835  
+Max.   :6.397  
+
+alpha
+
+
+
+ID
+
+1.660308
+1.683973
+NaN
+NaN
+NaN
+
+./models/models_thin_10_samples_250_chains_4_FINALRUN.Rdata
+
+
+Model.africa.PAsonly.10arcminutes_normal_FINALRUN
+
+
+beta
+
+Min.   :0.9982  
+1st Qu.:1.0222  
+Median :1.0443  
+Mean   :1.0723  
+3rd Qu.:1.1024  
+Max.   :1.4541  
+
+gamma
+
+Min.   :1.002  
+1st Qu.:1.005  
+Median :1.028  
+Mean   :1.045  
+3rd Qu.:1.076  
+Max.   :1.127  
+
+omega
+
+
+ID
+
+Min.   :0.9993  
+1st Qu.:1.0588  
+Median :1.1110  
+Mean   :1.1678  
+3rd Qu.:1.2081  
+Max.   :1.9318  
+
+alpha
+
+
+
+ID
+
+1.193412
+1.364783
+NaN
+NaN
+NaN
+
+Model.africa.PAsonly.10arcminutes_OpenHabitats_FINALRUN
+
+
+beta
+
+Min.   :0.9998  
+1st Qu.:1.0190  
+Median :1.0392  
+Mean   :1.0598  
+3rd Qu.:1.0707  
+Max.   :1.5318  
+
+gamma
+
+Min.   :0.9995  
+1st Qu.:1.0046  
+Median :1.0238  
+Mean   :1.0521  
+3rd Qu.:1.0355  
+Max.   :1.2769  
+
+omega
+
+
+ID
+
+Min.   :1.006  
+1st Qu.:1.095  
+Median :1.192  
+Mean   :1.209  
+3rd Qu.:1.298  
+Max.   :1.633  
+
+alpha
+
+
+
+ID
+
+1.073258
+1.317583
+NaN
+NaN
+NaN
+
+Model.africa.PAsonly.10arcminutes_TropicalForests_FINALRUN
+
+
+beta
+
+Min.   :1.003  
+1st Qu.:1.046  
+Median :1.092  
+Mean   :1.144  
+3rd Qu.:1.210  
+Max.   :1.663  
+
+gamma
+
+Min.   :1.014  
+1st Qu.:1.016  
+Median :1.025  
+Mean   :1.033  
+3rd Qu.:1.042  
+Max.   :1.068  
+
+omega
+
+
+ID
+
+Min.   :1.106  
+1st Qu.:1.294  
+Median :1.459  
+Mean   :1.518  
+3rd Qu.:1.668  
+Max.   :2.758  
+
+alpha
+
+
+
+ID
+
+1.467156
+1.992521
+NaN
+NaN
+NaN
+
+./models/models_thin_100_samples_250_chains_4_FINALRUN.Rdata
+
+
+Model.africa.PAsonly.10arcminutes_normal_FINALRUN
+
+
+beta
+
+Min.   :0.9979  
+1st Qu.:1.0036  
+Median :1.0088  
+Mean   :1.0147  
+3rd Qu.:1.0162  
+Max.   :1.2371  
+
+gamma
+
+Min.   :1.005  
+1st Qu.:1.009  
+Median :1.011  
+Mean   :1.021  
+3rd Qu.:1.027  
+Max.   :1.065  
+
+omega
+
+
+ID
+
+Min.   :1.001  
+1st Qu.:1.012  
+Median :1.026  
+Mean   :1.082  
+3rd Qu.:1.084  
+Max.   :1.611  
+
+alpha
+
+
+
+ID
+
+1.022486
+1.038573
+NaN
+NaN
+NaN
+
+Model.africa.PAsonly.10arcminutes_OpenHabitats_FINALRUN
+
+
+beta
+
+Min.   :0.9975  
+1st Qu.:1.0061  
+Median :1.0147  
+Mean   :1.0225  
+3rd Qu.:1.0308  
+Max.   :1.1578  
+
+gamma
+
+Min.   :1.002  
+1st Qu.:1.007  
+Median :1.011  
+Mean   :1.022  
+3rd Qu.:1.025  
+Max.   :1.074  
+
+omega
+
+
+ID
+
+Min.   :1.001  
+1st Qu.:1.090  
+Median :1.242  
+Mean   :1.341  
+3rd Qu.:1.494  
+Max.   :2.587  
+
+alpha
+
+
+
+ID
+
+1.035107
+1.148975
+NaN
+NaN
+NaN
+NaN
+
+Model.africa.PAsonly.10arcminutes_TropicalForests_FINALRUN
+
+
+beta
+
+Min.   :0.9981  
+1st Qu.:1.0253  
+Median :1.0495  
+Mean   :1.0814  
+3rd Qu.:1.1069  
+Max.   :1.5080  
+
+gamma
+
+Min.   :1.007  
+1st Qu.:1.008  
+Median :1.018  
+Mean   :1.035  
+3rd Qu.:1.028  
+Max.   :1.123  
+
+omega
+
+
+ID
+
+Min.   :1.028  
+1st Qu.:1.092  
+Median :1.157  
+Mean   :1.224  
+3rd Qu.:1.251  
+Max.   :1.872  
+
+alpha
+
+
+
+ID
+
+1.028486
+1.252799
+NaN
+NaN
+NaN
+NaN
