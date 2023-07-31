@@ -5,7 +5,6 @@ library(corrplot)
 library(gplots)
 library(ape)
 library(dispRity)
-library(rgdal)
 library(letsR)
 library(tidyverse)
 library(dendextend)
@@ -75,7 +74,7 @@ grid = grid[!is.na(over(grid, TropicalForests_shapefile.shp)),]
 # Thin the data
 tol=80000
 zd <- zerodist(eta_V1_projected, zero=tol)
-eta_V1_projected <- eta_V1_projected[-zd[,2], ]
+eta_V1_projected <- eta_V1_projected[-zd[,2], ] # Drop 229 of the original points to go from 300 to 71 points 
 
 kriging_result = autoKrige(V1~1, eta_V1_projected, grid)
 plot(kriging_result)

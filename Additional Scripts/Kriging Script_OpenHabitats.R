@@ -137,5 +137,6 @@ V2.plot<-ggplot()+
         panel.grid = element_blank())+
   geom_point(data = eta_points_projected.2, aes(x=Longitude, y=Latitude),shape=1,size=2)
 
+#1065*672
 
 
