@@ -24,7 +24,7 @@ The pipeline is divided into 8 scripts, the role of which are listed below:
 3. S3_evaluate_convergence_africa_PAsonly_FINALRUN.R (Evaluates whether the MCMC algorithm has achieved convergence for each model)
 4. S4_compute_model_fit_africa_PAsonly_FINALRUN.R (Calculates explanatory and predictive power for each model and calculates WAIC).
 5. S5_show_model_fit_africa_PAsonly_FINALRUN.R (Outputs plots displaying explanatory and predictive power for each species in each model).
-6. S6_show_parameter_estimates_africa_PAsonly_FINALRUN.R (Outputs plots displaying key parameters from the fitted model, including covarian and predictive power for each species in each model)
-7. S7_make_predictions_africa_PAsonly_FINALRUN.R
-8. S8_make_furtherpredictions_africa_PAsonly_FINALRUN.R
+6. S6_show_parameter_estimates_africa_PAsonly_FINALRUN.R (Outputs plots displaying key parameters from the fitted model, including the covariance matrix for residual association between species in each model)
+7. S7_make_predictions_africa_PAsonly_FINALRUN.R (Calculates and outputs plots showing the predicted species richness and probability of presence for focal species over a gradient of all fixed effects in the model)
+8. S8_make_furtherpredictions_africa_PAsonly_FINALRUN.R (Shows further key parameters from the fitted model, including plotting the eta values from the latent variables spatially) 
 
