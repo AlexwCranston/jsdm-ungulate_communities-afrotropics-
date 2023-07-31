@@ -9,4 +9,4 @@ To cite this paper:
 **Data Processing**
 
  **Analyses**
-The main body of analyses are carried out using the HMSC pipeline in /HMSC Pipeline. These scripts have had minor modifications to fit this project but otherwise entirely use the original pipeline provide by HMSC authors, available [here] (https://www.helsinki.fi/en/researchgroups/statistical-ecology/software/hmsc)https://www.helsinki.fi/en/researchgroups/statistical-ecology/software/hmsc
+The main body of analyses are carried out using the HMSC pipeline in /HMSC Pipeline. These scripts have had minor modifications to fit this project but otherwise entirely use the original pipeline provide by HMSC authors, available [here](https://www.helsinki.fi/en/researchgroups/statistical-ecology/software/hmsc)
