@@ -9,6 +9,7 @@ To cite this paper:
 **Data Processing**
 
 All code for data processing can be found in /Raw Data processing in the script IUCN Script_Protected Areas Only.R. This script takes spatial data on species distributions downloaded from the IUCN red list and converts it to a presence/absence matrix for all species downloaded, then crops this matrix to the area of interest for each model. Additionally, it extracts environmental data from a series of rasters covering a wide range of environmental variables for each point in the matrix. All raw data (rasters used as a source of environmental dataas well as the IUCN spatial data download) are also found in /Raw Data processing.
+
  **Analyses**
 
 The main body of analyses are carried out using the HMSC pipeline in /HMSC Pipeline. These scripts have had minor modifications to fit this project but otherwise entirely use the original pipeline provide by HMSC authors, available [here](https://www.helsinki.fi/en/researchgroups/statistical-ecology/software/hmsc)
