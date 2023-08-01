@@ -32,4 +32,5 @@ Code for the dissimilarity analyses can be found in /Additional Scripts, named *
 
 **Code for Figures**
 
-Code for all figures can be found in /Additional Scripts. **Kriging Script_OpenHabitats.R** contains code for the Figure 4 the site loadings values of the first (upper) and second latent variable from the Open Habitats model for all points in the model, interpolated across the Afrotropics using kriging interpolation
+Code for all figures can be found in /Additional Scripts. **Kriging Script_OpenHabitats.R** contains code for the Figure 4. This figure plots the site loadings values of the first (upper) and second latent variable from the Open Habitats model, interpolated across the Afrotropics using kriging interpolation. **Kriging Script_TropicalForests.R** contains code for the Figure 5. This figure plots the site loadings values in the same manner as the previous Figure, except from the Tropical Forests model.
+Lastly, **All Graphs_exceptKriging.R** contains code for the correlation matrix plots (Figure 2), and the boxplots showing explained variance in both models attributable to the latent variables (Figure 1).
