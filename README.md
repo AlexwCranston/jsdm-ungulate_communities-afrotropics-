@@ -26,5 +26,10 @@ The pipeline is divided into 8 scripts, the role of which are listed below:
 5. **S5_show_model_fit_africa_PAsonly_FINALRUN.R** (Outputs plots displaying explanatory and predictive power for each species in each model).
 6. **S6_show_parameter_estimates_africa_PAsonly_FINALRUN.R** (Outputs plots displaying key parameters from the fitted model, including the covariance matrix for residual association between species in each model)
 7. **S7_make_predictions_africa_PAsonly_FINALRUN.R** (Calculates and outputs plots showing the predicted species richness and probability of presence for focal species over a gradient of all fixed effects in the model)
-8. **S8_make_furtherpredictions_africa_PAsonly_FINALRUN.R** (Shows further key parameters from the fitted model, including plotting the eta values from the latent variables spatially) 
+8. **S8_make_furtherpredictions_africa_PAsonly_FINALRUN.R** (Shows further key parameters from the fitted model, including plotting the site loadings, or eta parameter, from the latent variables on a map of Africa)
 
+Code for the dissimilarity analyses can be found in /Additional Scripts, named **Gower Distance.R**. Trait data used to calculate Gower's Distance between species can be found in /Traits.
+
+**Code for Figures**
+
+Code for all figures can be found in /Additional Scripts. **Kriging Script_OpenHabitats.R** contains code for the Figure 4 the site loadings values of the first (upper) and second latent variable from the Open Habitats model for all points in the model, interpolated across the Afrotropics using kriging interpolation
