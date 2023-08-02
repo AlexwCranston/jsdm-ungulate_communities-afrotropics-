@@ -301,4 +301,5 @@ ggplot(both_variance, aes(x = model , y = `Random: ID`)) +
   theme_bw(base_size = 14) +
   ylab("Proportion of variance explained") +
   xlab("") +
-  ylim(0,1)
+  ylim(0,1) +
+  theme(text = element_text(size=20))
