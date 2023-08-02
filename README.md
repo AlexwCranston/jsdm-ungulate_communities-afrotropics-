@@ -28,7 +28,6 @@ The pipeline is divided into 8 scripts, the role of which are listed below:
 5. **S5_show_model_fit_africa_PAsonly_FINALRUN.R** (Outputs plots displaying explanatory and predictive power for each species in each model).
 6. **S6_show_parameter_estimates_africa_PAsonly_FINALRUN.R** (Outputs plots displaying key parameters from the fitted model, including the covariance matrix for residual association between species in each model)
 7. **S7_make_predictions_africa_PAsonly_FINALRUN.R** (Calculates and outputs plots showing the predicted species richness and probability of presence for focal species over a gradient of all fixed effects in the model)
-8. **S8_make_furtherpredictions_africa_PAsonly_FINALRUN.R** (Shows further key parameters from the fitted model, including plotting the site loadings, or eta parameter, from the latent variables on a map of Africa)
 
 Code for the dissimilarity analyses can be found in /Additional Scripts, named **Gower Distance.R**. 
 
@@ -40,7 +39,7 @@ Code for all figures can be found in /Additional Scripts.
 
 **Kriging Script_TropicalForests.R** contains code for the Figure 5. This figure plots the site loadings values in the same manner as the previous Figure, except from the Tropical Forests model.
 
-Lastly, **All Graphs_exceptKriging.R** contains code for the correlation matrix plots (Figure 2), and the boxplots showing explained variance in both models attributable to the latent variables (Figure 1).
+Lastly, **All Graphs_exceptKriging.R** contains code for the correlation matrix plots (Figure 2), and the boxplots showing explained variance in both models attributable to the latent variables (Figure 1). It also contains code for the raw (not interpolated) site loadings plot found in the supplementary materials. It also contains code calculating the fit of both models using Tjur R2 and assessing the relationship between species occupancy and explanatory power.
 
 **Other**
 
