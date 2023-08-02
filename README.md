@@ -20,7 +20,7 @@ The main body of analyses are carried out using the HMSC pipeline in /HMSC Pipel
 
 This pipeline uses the three files of processed data located in /Data (Presab_plus_climate_variables_PROTECTEDAREASONLY_Res10arcminutes.csv) but more broadly requires presence/absence or abundance data for any numbers of species over any number of sample sites, with environmental data for all sites also required to act as independent variables in the model. Presence/absence and count data does not need to be complete for all species in all sites but environmental data (or any other data used as an independent variable) does need to be complete.
 
-The pipeline is divided into 8 scripts, the role of which are listed below:
+The pipeline is divided into 7 scripts, the role of which are listed below:
 1. **S1_define_models_template_africa_PAsonly_FINALRUN.R** (Creates the unfitted HMSC models)
 2. **S2_fit_models_africa_PAsonly_FINALRUN.R** (Fits the unfitted models defined in S1 to the data using MCMC)
 3. **S3_evaluate_convergence_africa_PAsonly_FINALRUN.R** (Evaluates whether the MCMC algorithm has achieved convergence for each model)
