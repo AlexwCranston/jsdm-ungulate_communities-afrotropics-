@@ -52,11 +52,6 @@ eta_OpenHabitats<-cbind(xy_OpenHabitats,eta_OpenHabitats)
 colnames(eta_OpenHabitats)<-c("Longitude","Latitude","V1","V2","V3","V4","V5")
 
 
-library("rnaturalearth")
-library("rnaturalearthdata")
-library("ggspatial")
-
-
 #Read in shapefile for Africa
 africa <- readOGR("Raw Data Processing", "Africa_cropped")
 

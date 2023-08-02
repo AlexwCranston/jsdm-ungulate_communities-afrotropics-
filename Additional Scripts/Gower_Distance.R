@@ -2,7 +2,6 @@ library(gower)
 library(tidyverse)
 library(reshape2)
 library(Hmsc)
-library(heavy)
 
 
 raw.data<-read.csv("Traits/Trait Data_AllUngulates.csv")
