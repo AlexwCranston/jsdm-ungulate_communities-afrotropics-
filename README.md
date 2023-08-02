@@ -4,9 +4,9 @@ Authors: Alex Cranston, Natalie Cooper, Jakob Bro-Jorgensen
 
 This repository contains all code, data and fitted models related to the paper "Climatic Variables Alone do not Determine Ungulate Community Composition in the Afrotropics" analysing the assembly of ungulate communities in sub-Saharan Africa using joint species distribution modelling.
 
-To cite this paper: 
+To cite this paper: TBC
 
-To cite this repo: 
+To cite this repo: TBC
 
 ### Data Processing
 
@@ -29,7 +29,7 @@ The pipeline is divided into 7 scripts, the role of which are listed below:
 6. **S6_show_parameter_estimates_africa_PAsonly_FINALRUN.R** (Outputs plots displaying key parameters from the fitted model, including the covariance matrix for residual association between species in each model)
 7. **S7_make_predictions_africa_PAsonly_FINALRUN.R** (Calculates and outputs plots showing the predicted species richness and probability of presence for focal species over a gradient of all fixed effects in the model)
 
-Code for the dissimilarity analyses can be found in /Additional Scripts, named **Gower Distance.R**. 
+Code for the Trait dissimilarity analysis can be found in /Additional Scripts, named **Gower Distance.R**. 
 
 ### Code for Figures
 
