@@ -287,23 +287,13 @@ mean(V_TropicalForests$`Random: ID`) # 0.2979733
 
 
 
-# Then plot the proportion attributble to the random effect for each species in the model as a boxplot
+# Then plot the proportion attributable to the random effect for each species in the model as a boxplot
 
+both_variance = rbind(V_OpenHabitats, V_TropicalForests)
 
+both_variance$model <- c(rep("Open Habitats", 46),rep("Tropical Forests", 45))
 
-ggplot(V_OpenHabitats, aes(x = "" , y = `Random: ID`)) +
-  geom_jitter(alpha = 0.8) +
-  stat_boxplot(geom = "errorbar",
-               width = 0.1) + 
-  geom_boxplot(width = 0.5, alpha = 0.5) +
-  theme_bw(base_size = 14) +
-  ylab("Proportion of variance explained") +
-  xlab("") +
-  ylim(0,1)
-ggsave("myplot.pdf", width = 6)
-
-
-ggplot(V_TropicalForests, aes(x = "" , y = `Random: ID`)) +
+ggplot(both_variance, aes(x = model , y = `Random: ID`)) +
   geom_jitter(alpha = 0.8) +
   stat_boxplot(geom = "errorbar",
                width = 0.1) + 
