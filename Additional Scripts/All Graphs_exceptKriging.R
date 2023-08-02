@@ -191,51 +191,11 @@ rownames(OmegaCor.toPlot)<-gsub("Tragelaphus strepsiceros","Greater Kudu", rowna
 colnames(OmegaCor.toPlot)<-rownames(OmegaCor.toPlot)
 
 
-
-
-rownames(OmegaCor.toPlot)<-gsub("Aepyceros","A.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Alcelaphus","A.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Antidorcas","A.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Cephalophus","C.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Connochaetes","C.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Connochaetes","C.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Damaliscus","D.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Equus","E.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Giraffa","G.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Hippopotamus","H.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Hippotragus","H.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Hylochoerus","H.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Kobus","K.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Litocranius","L.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Loxodonta","L.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Madoqua","M.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Nanger","N.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Nanger","N.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Nesotragus","N.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Oreotragus","O.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Oryx","O.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Ourebia","O.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Phacochoerus","P.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Philantomba","P.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Potamochoerus","P.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Raphicerus","R.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Redunca","R.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Sylvicapra","S.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Syncerus","S.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Tragelaphus","T.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-colnames(OmegaCor.toPlot)<-rownames(OmegaCor.toPlot)
-
-heatmap.2(OmegaCor.toPlot)
-
 heatmap.2(OmegaCor.toPlot, scale = "none", col = colorpanel(100, "blue", "white", "red"), 
           trace = "none", dendrogram = "both",Rowv = dd, Colv = dd, cexRow=4.25,cexCol = 4.25,cex.main = 5,  density.info = "none", symm = TRUE, 
           margins = c(40, 40),
           key=TRUE, lhei=c(0.5,3), lwid=c(0.5,3))
 
-
-###
-##labCol=as.expression(lapply(colnames(OmegaCor.toPlot), function(a) bquote(italic(.(a))))),
-##labRow=as.expression(lapply(rownames(OmegaCor.toPlot), function(a) bquote(italic(.(a)))))
 
 ### Correlation Matrix for Tropical Forests Model
 
@@ -298,34 +258,6 @@ rownames(OmegaCor.toPlot)<-gsub("Tragelaphus spekii","Sitatunga", rownames(Omega
 rownames(OmegaCor.toPlot)<-gsub("Tragelaphus strepsiceros","Greater Kudu", rownames(OmegaCor.toPlot), fixed = TRUE) 
 colnames(OmegaCor.toPlot)<-rownames(OmegaCor.toPlot)
 
-
-rownames(OmegaCor.toPlot)<-gsub("Aepyceros","A.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Alcelaphus","A.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Antidorcas","A.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Cephalophus","C.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Choeropsis","C.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Connochaetes","C.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Equus","E.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Hippopotamus","H.", rownames(OmegaCor.toPlot), fixed = TRUE)
-rownames(OmegaCor.toPlot)<-gsub("Hyemoschus","H.", rownames(OmegaCor.toPlot), fixed = TRUE)
-rownames(OmegaCor.toPlot)<-gsub("Hippotragus","H.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Hylochoerus","H.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Kobus","K.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Loxodonta","L.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Madoqua","M.", rownames(OmegaCor.toPlot), fixed = TRUE)
-rownames(OmegaCor.toPlot)<-gsub("Neotragus","N.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Nesotragus","N.", rownames(OmegaCor.toPlot), fixed = TRUE)
-rownames(OmegaCor.toPlot)<-gsub("Okapia","O.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Oreotragus","O.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Ourebia","O.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Phacochoerus","P.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Philantomba","P.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Potamochoerus","P.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Redunca","R.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Sylvicapra","S.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Syncerus","S.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-rownames(OmegaCor.toPlot)<-gsub("Tragelaphus","T.", rownames(OmegaCor.toPlot), fixed = TRUE) 
-colnames(OmegaCor.toPlot)<-rownames(OmegaCor.toPlot)
 
 heatmap.2(OmegaCor.toPlot, scale = "none", col = colorpanel(100, "blue", "white", "red"), 
           trace = "none", dendrogram = "both",Rowv = dd, Colv = dd,  cexRow=4.25,cexCol = 4.25,cex.main = 5,  density.info = "none", symm = TRUE, 
