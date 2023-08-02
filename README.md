@@ -12,7 +12,7 @@ To cite this repo:
 
 All code for data processing can be found in /Raw Data processing in the script IUCN Script_Protected Areas Only.R. This script takes spatial data on species distributions downloaded from the IUCN red list and converts it to a presence/absence matrix for all species downloaded, then crops this matrix to the area of interest for each model. Additionally, it extracts environmental data from a series of rasters covering a wide range of environmental variables for each point in the matrix. All raw data (rasters used as a source of environmental datas well as the IUCN spatial data download) are also found in /Raw Data processing.
 
-The output of processing are contained in /Data. Note that there are three files of processed data and three models coded for in the pipeline but in order to avoid unnecessary repetition and focus on the most interesting findings, only the biome specific models are discussed in the paper.
+The output of processing are contained in /Data. Note that there are three files of processed data and three models coded for in the pipeline but in order to avoid unnecessary repetition and focus on the most interesting findings, only the second and third biome specific models are discussed in the paper.
 
  **Analyses**
 
@@ -30,11 +30,16 @@ The pipeline is divided into 8 scripts, the role of which are listed below:
 7. **S7_make_predictions_africa_PAsonly_FINALRUN.R** (Calculates and outputs plots showing the predicted species richness and probability of presence for focal species over a gradient of all fixed effects in the model)
 8. **S8_make_furtherpredictions_africa_PAsonly_FINALRUN.R** (Shows further key parameters from the fitted model, including plotting the site loadings, or eta parameter, from the latent variables on a map of Africa)
 
-Code for the dissimilarity analyses can be found in /Additional Scripts, named **Gower Distance.R**. Trait data used to calculate Gower's Distance between species can be found in /Traits.
+Code for the dissimilarity analyses can be found in /Additional Scripts, named **Gower Distance.R**. 
 
 **Code for Figures**
 
-Code for all figures can be found in /Additional Scripts. **Kriging Script_OpenHabitats.R** contains code for the Figure 4. This figure plots the site loadings values of the first (upper) and second latent variable from the Open Habitats model, interpolated across the Afrotropics using kriging interpolation. **Kriging Script_TropicalForests.R** contains code for the Figure 5. This figure plots the site loadings values in the same manner as the previous Figure, except from the Tropical Forests model.
+Code for all figures can be found in /Additional Scripts. 
+
+**Kriging Script_OpenHabitats.R** contains code for the Figure 4. This figure plots the site loadings values of the first (upper) and second latent variable from the Open Habitats model, interpolated across the Afrotropics using kriging interpolation. 
+
+**Kriging Script_TropicalForests.R** contains code for the Figure 5. This figure plots the site loadings values in the same manner as the previous Figure, except from the Tropical Forests model.
+
 Lastly, **All Graphs_exceptKriging.R** contains code for the correlation matrix plots (Figure 2), and the boxplots showing explained variance in both models attributable to the latent variables (Figure 1).
 
 **Other**
@@ -44,3 +49,5 @@ Lastly, **All Graphs_exceptKriging.R** contains code for the correlation matrix 
 /Models contains all fitted and unfitted models used in the paper.
 
 /results contains result of analysis of MCMC convergence as well as plots showing explanatory and predictive power for all species in each model
+
+/Traits contains the trait data (**Trait Data_AllUngulates.csv**) used to calculate Gower's Distance between species.
