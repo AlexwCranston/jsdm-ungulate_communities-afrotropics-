@@ -43,4 +43,4 @@ Lastly, **All Graphs_exceptKriging.R** contains code for the correlation matrix 
 
 /Models contains all fitted and unfitted models used in the paper.
 
-/results contains all outputted plots produced by HMSC pipeline as well as info on MCMC convergence.
+/results contains result of analysis of MCMC convergence as well as plots showing explanatory and predictive power for all species in each model
