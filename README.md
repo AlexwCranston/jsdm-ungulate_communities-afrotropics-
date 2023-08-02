@@ -4,9 +4,9 @@ Authors: Alex Cranston, Natalie Cooper, Jakob Bro-Jorgensen
 
 This repository contains all code, data and fitted models related to the paper "Climatic Variables Alone do not Determine Ungulate Community Composition in the Afrotropics" analysing the assembly of ungulate communities in sub-Saharan Africa using joint species distribution modelling.
 
-To cite this paper: 
+To cite this paper: TBC
 
-To cite this repo: 
+To cite this repo: TBC
 
 ### Data Processing
 
@@ -16,7 +16,7 @@ The output of processing are contained in /Data. Note that there are three files
 
 ### Analyses
 
-The main body of analyses are carried out using the HMSC pipeline in /HMSC Pipeline. These scripts have had minor modifications to fit this project but otherwise entirely use the original pipeline provide by HMSC authors, available [here](https://www.helsinki.fi/en/researchgroups/statistical-ecology/software/hmsc)
+The main body of analyses are carried out using the HMSC pipeline in /HMSC Pipeline. These scripts have had minor modifications to fit this project but otherwise entirely use the original pipeline provide by HMSC authors, available [here](https://www.helsinki.fi/en/researchgroups/statistical-ecology/software/hmsc).
 
 This pipeline uses the three files of processed data located in /Data (Presab_plus_climate_variables_PROTECTEDAREASONLY_Res10arcminutes.csv) but more broadly requires presence/absence or abundance data for any numbers of species over any number of sample sites, with environmental data for all sites also required to act as independent variables in the model. Presence/absence and count data does not need to be complete for all species in all sites but environmental data (or any other data used as an independent variable) does need to be complete.
 
@@ -29,7 +29,7 @@ The pipeline is divided into 7 scripts, the role of which are listed below:
 6. **S6_show_parameter_estimates_africa_PAsonly_FINALRUN.R** (Outputs plots displaying key parameters from the fitted model, including the covariance matrix for residual association between species in each model)
 7. **S7_make_predictions_africa_PAsonly_FINALRUN.R** (Calculates and outputs plots showing the predicted species richness and probability of presence for focal species over a gradient of all fixed effects in the model)
 
-Code for the dissimilarity analyses can be found in /Additional Scripts, named **Gower Distance.R**. 
+Code for the Trait dissimilarity analysis can be found in /Additional Scripts, named **Gower Distance.R**. 
 
 ### Code for Figures
 
