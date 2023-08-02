@@ -265,9 +265,5 @@ Please see below for the output of devtools::session_info() used to perform the 
  xml2                1.3.2      2020-04-23 [1] CRAN (R 4.1.1)
  xts                 0.13.1     2023-04-16 [1] CRAN (R 4.1.1)
  zoo               * 1.8-9      2021-03-09 [1] CRAN (R 4.1.2)
-
- [1] C:/Users/alexw/OneDrive/Documents/R/win-library/4.1
- [2] C:/Program Files/R/R-4.1.1/library
-
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 ```
