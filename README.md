@@ -55,6 +55,7 @@ Lastly, **All Graphs_exceptKriging.R** contains code for the correlation matrix 
 
 Please see below for the output of devtools::session_info() used to perform the analyses for this paper.
 
+```
 - Session info ---------------------------------------------------------------------------------------------------------------------------------------
  setting  value
  version  R version 4.1.1 (2021-08-10)
@@ -269,4 +270,4 @@ Please see below for the output of devtools::session_info() used to perform the 
  [2] C:/Program Files/R/R-4.1.1/library
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-> 
+```
