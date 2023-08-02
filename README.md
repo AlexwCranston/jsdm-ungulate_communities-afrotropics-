@@ -1,4 +1,4 @@
-**Climatic Variables Alone do not Determine Ungulate Community Composition in the Afrotropics**
+###Climatic Variables Alone do not Determine Ungulate Community Composition in the Afrotropics
 
 Authors: Alex Cranston, Natalie Cooper, Jakob Bro-Jorgensen
 
