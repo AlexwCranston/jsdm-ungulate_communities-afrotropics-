@@ -290,40 +290,25 @@ mean(V_TropicalForests$`Random: ID`) # 0.2979733
 # Then plot the proportion attributble to the random effect for each species in the model as a boxplot
 
 
-ggplot(V_OpenHabitats, aes(x="", y=`Random: ID`)) +
-    stat_boxplot(geom ='errorbar',width = 0.5,lwd=1.5,color="darkred")+
-    geom_boxplot(color="darkred", fill="orangered",alpha=1, lwd=1.5)+
-    theme(legend.position="none",plot.title = element_text(size=11)) +
-    ggtitle("") +
-    xlab("")+
-    ylab("Proportion of explained variance due to \nrandom effect")+
-    geom_jitter(color="black", size=2.5, alpha=1)+
-    theme(axis.text.x=element_blank(),
-        axis.ticks.y=element_line(size = 1.5),
-        plot.title = element_text(hjust = 0, size=30,face="bold"),
-        axis.text.y=element_text(size=15,face="bold",colour = "black"),
-        legend.text = element_text(size=15,face="bold"),
-        axis.line.y = element_line(size = 1.5, linetype = "solid", colour = "black"),
-        panel.background = element_blank(),
-        panel.grid = element_blank(),
-        axis.title.y = element_text(size = rel(1.8),face="bold",colour = "black"))
-  
 
-ggplot(V_TropicalForests, aes(x="", y=`Random: ID`)) +
-  stat_boxplot(geom ='errorbar',width = 0.5,lwd=1.5,color="darkred")+
-  geom_boxplot(color="darkred", fill="orangered",alpha=1, lwd=1.5)+
-  theme(legend.position="none",plot.title = element_text(size=11)) +
-  ggtitle("") +
-  xlab("")+
-  ylab("Proportion of explained variance due to \nrandom effect")+
-  geom_jitter(color="black", size=2.5, alpha=1)+
-  theme(axis.text.x=element_blank(),
-        axis.ticks.y=element_line(size = 1.5),
-        plot.title = element_text(hjust = 0, size=30,face="bold"),
-        axis.text.y=element_text(size=15,face="bold",colour = "black"),
-        legend.text = element_text(size=15,face="bold"),
-        axis.line.y = element_line(size = 1.5, linetype = "solid", colour = "black"),
-        panel.background = element_blank(),
-        panel.grid = element_blank(),
-        axis.title.y = element_text(size = rel(1.8),face="bold",colour = "black"))
+ggplot(V_OpenHabitats, aes(x = "" , y = `Random: ID`)) +
+  geom_jitter(alpha = 0.8) +
+  stat_boxplot(geom = "errorbar",
+               width = 0.1) + 
+  geom_boxplot(width = 0.5, alpha = 0.5) +
+  theme_bw(base_size = 14) +
+  ylab("Proportion of variance explained") +
+  xlab("") +
+  ylim(0,1)
+ggsave("myplot.pdf", width = 6)
 
+
+ggplot(V_TropicalForests, aes(x = "" , y = `Random: ID`)) +
+  geom_jitter(alpha = 0.8) +
+  stat_boxplot(geom = "errorbar",
+               width = 0.1) + 
+  geom_boxplot(width = 0.5, alpha = 0.5) +
+  theme_bw(base_size = 14) +
+  ylab("Proportion of variance explained") +
+  xlab("") +
+  ylim(0,1)
