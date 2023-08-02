@@ -1,4 +1,4 @@
-### Climatic Variables Alone do not Determine Ungulate Community Composition in the Afrotropics
+## Climatic Variables Alone do not Determine Ungulate Community Composition in the Afrotropics
 
 Authors: Alex Cranston, Natalie Cooper, Jakob Bro-Jorgensen
 
@@ -8,13 +8,13 @@ To cite this paper:
 
 To cite this repo: 
 
-## Data Processing
+### Data Processing
 
 All code for data processing can be found in /Raw Data processing in the script IUCN Script_Protected Areas Only.R. This script takes spatial data on species distributions downloaded from the IUCN red list and converts it to a presence/absence matrix for all species downloaded, then crops this matrix to the area of interest for each model. Additionally, it extracts environmental data from a series of rasters covering a wide range of environmental variables for each point in the matrix. All raw data (rasters used as a source of environmental datas well as the IUCN spatial data download) are also found in /Raw Data processing. Note this file also contains spatial polygons of which are used in some plots.
 
 The output of processing are contained in /Data. Note that there are three files of processed data and three models coded for in the pipeline but in order to avoid unnecessary repetition and focus on the most interesting findings, only the second and third biome specific models are discussed in the paper.
 
-## Analyses
+### Analyses
 
 The main body of analyses are carried out using the HMSC pipeline in /HMSC Pipeline. These scripts have had minor modifications to fit this project but otherwise entirely use the original pipeline provide by HMSC authors, available [here](https://www.helsinki.fi/en/researchgroups/statistical-ecology/software/hmsc)
 
@@ -31,7 +31,7 @@ The pipeline is divided into 8 scripts, the role of which are listed below:
 
 Code for the dissimilarity analyses can be found in /Additional Scripts, named **Gower Distance.R**. 
 
-## Code for Figures
+### Code for Figures
 
 Code for all figures can be found in /Additional Scripts. 
 
@@ -41,7 +41,7 @@ Code for all figures can be found in /Additional Scripts.
 
 Lastly, **All Graphs_exceptKriging.R** contains code for the correlation matrix plots (Figure 2), and the boxplots showing explained variance in both models attributable to the latent variables (Figure 1). It also contains code for the raw (not interpolated) site loadings plot found in the supplementary materials. It also contains code calculating the fit of both models using Tjur R2 and assessing the relationship between species occupancy and explanatory power.
 
-## Other
+### Other
 
 /Graphs contains all figures used in the paper.
 
@@ -51,7 +51,7 @@ Lastly, **All Graphs_exceptKriging.R** contains code for the correlation matrix 
 
 /Traits contains the trait data (**Trait Data_AllUngulates.csv**) used to calculate Gower's Distance between species.
 
-### Session Info
+## Session Info
 
 Please see below for the output of devtools::session_info() used to perform the analyses for this paper.
 
