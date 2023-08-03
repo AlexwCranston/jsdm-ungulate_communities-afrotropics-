@@ -53,6 +53,7 @@ Lastly, **All Graphs_exceptKriging.R** contains code for the correlation matrix 
 
 /Rasters contains all raster data extracted by **IUCN Script_Protected Areas Only.R**. Note that the majority of these variables are not used in the models defined in the HMSC pipeline but they are included here for the sake of completeness.
 
+/Manuscripts contains the final manuscripts for the paper and the supplementary material.
 ## Session Info
 
 Please see below for the output of devtools::session_info() used to perform the analyses for this paper.
