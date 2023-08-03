@@ -69,7 +69,7 @@ V1<-ggplot(data = eta_OpenHabitats, aes(x=Longitude, y=Latitude, color=V1)) +  g
         legend.text = element_text(size=15,face="bold"),
         legend.position = "bottom")
 
-V2<-ggplot(data = eta_OpenHabitats, aes(x=Longitude, y=Latitude, color=V2))+geom_point(size=1.5) +  ggtitle("Second Latent Variable")+ 
+V2<-ggplot(data = eta_OpenHabitats, aes(x=Longitude, y=Latitude, color=V2))+geom_point(size=3) +  ggtitle("Second Latent Variable")+ 
   scale_colour_gradientn(colours = c("purple","blue","green","yellow","orange","red"), name = "") +theme(legend.position="bottom")+
   labs(y="",x="") + 
   geom_polygon(data = africa, aes(x = long, y = lat, group = group), colour = "black", fill = NA, size=1) +
@@ -85,8 +85,6 @@ V2<-ggplot(data = eta_OpenHabitats, aes(x=Longitude, y=Latitude, color=V2))+geom
 V3<-ggplot(data = eta_OpenHabitats, aes(x=Longitude, y=Latitude, color=V3))+geom_point(size=1.5) +  ggtitle("Latent Variable 3")+ scale_colour_gradientn(colours = c("purple","blue","green","yellow","orange","red"), name = "") +theme(legend.position="bottom")+labs(y="")
 V4<-ggplot(data = eta_OpenHabitats, aes(x=Longitude, y=Latitude, color=V4))+geom_point(size=1.5) +  ggtitle("Latent Variable 4")+ scale_colour_gradientn(colours = c("purple","blue","green","yellow","orange","red"), name = "") +theme(legend.position="bottom")+labs(y="")
 V5<-ggplot(data = eta_OpenHabitats, aes(x=Longitude, y=Latitude, color=V5))+geom_point(size=1.5) +  ggtitle("Latent Variable 5")+ scale_colour_gradientn(colours = c("purple","blue","green","yellow","orange","red"), name = "") +theme(legend.position="bottom")+labs(y="")
-
-protected.areas_OpenHabitats <- readOGR("Raw Data Processing", "Africa_ProtectedAreas_Category1_2_plusNationalParks_minusTropicalForests")
 
 ### Let's do the same for the Tropical Model
 
@@ -114,7 +112,7 @@ V1<-ggplot(data = eta_TropicalForests, aes(x=Longitude, y=Latitude, color=V1)) +
         legend.text = element_text(size=15,face="bold"),
         legend.position = "bottom")
 
-V2<-ggplot(data = eta_TropicalForests, aes(x=Longitude, y=Latitude, color=V2))+geom_point(size=1.5) +  ggtitle("Second Latent Variable")+ 
+V2<-ggplot(data = eta_TropicalForests, aes(x=Longitude, y=Latitude, color=V2))+geom_point(size=3) +  ggtitle("Second Latent Variable")+ 
   scale_colour_gradientn(colours = c("purple","blue","green","yellow","orange","red"), name = "") +theme(legend.position="bottom")+
   labs(y="",x="") + 
   geom_polygon(data = africa, aes(x = long, y = lat, group = group), colour = "black", fill = NA, size=1) +
