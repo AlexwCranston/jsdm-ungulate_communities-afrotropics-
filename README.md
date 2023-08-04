@@ -39,7 +39,7 @@ Code for all figures can be found in /Additional Scripts.
 
 **Kriging Script_TropicalForests.R** contains code for the Figure 5. This figure plots the site loadings values in the same manner as the previous Figure, except from the Tropical Forests model.
 
-Lastly, **All Graphs_exceptKriging.R** contains code for the correlation matrix plots (Figure 2), and the boxplots showing explained variance in both models attributable to the latent variables (Figure 1). It also contains code for the raw (not interpolated) site loadings plot found in the supplementary materials. It also contains code calculating the fit of both models using Tjur R2 and assessing the relationship between species occupancy and explanatory power.
+Lastly, **All Graphs_exceptKriging.R** contains code for the correlation matrix plots (Figure 2), and the boxplots showing explained variance in both models attributable to the latent variables (Figure 1). It also contains code for the raw (not interpolated) site loadings plots (Figure S1 & S2) found in the supplementary materials. Finally, it contains code calculating the fit of both models using Tjur R2 and assessing the relationship between species occupancy and explanatory power.
 
 ### Other
 
