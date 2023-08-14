@@ -571,34 +571,6 @@ BIO19.data$BIO19 <- raster::extract(BIO19, samples)
 
 
 
-# Cattle Abundance
-
-Cattle.Aw<- raster("Rasters/6_Ct_2010_Aw_reprojected.tif")
-Cattle.Aw.data <- samples
-Cattle.Aw.data$Cattle.Aw <- raster::extract(Cattle.Aw, samples)
-
-# Sheep Abundance
-
-Sheep.Aw<- raster("Rasters/6_Sh_2010_Aw_reprojected.tif")
-Sheep.Aw.data <- samples
-Sheep.Aw.data$Sheep.Aw <- raster::extract(Sheep.Aw, samples)
-
-# Goats Abundance 
-
-Goat.Aw<- raster("Rasters/6_Gt_2010_Aw_reprojected.tif")
-Goat.Aw.data <- samples
-Goat.Aw.data$Goat.Aw <- raster::extract(Goat.Aw, samples)
-
-# Total livestock Abundance
-
-Total.livestock.Aw.data <- samples
-Total.livestock.Aw.data$Total.livestock.Aw <- Cattle.Aw.data$Cattle.Aw+Sheep.Aw.data$Sheep.Aw+Goat.Aw.data$Goat.Aw
-
-# Human Footprint
-
-Human.footprint<- raster("Rasters/wildareas-v3-2009-human-footprint_reprojected.tif")
-Human.footprint.data <- samples
-Human.footprint.data$Human.footprint <- raster::extract(Human.footprint, samples)
 
 # Land Use Cover 
 
