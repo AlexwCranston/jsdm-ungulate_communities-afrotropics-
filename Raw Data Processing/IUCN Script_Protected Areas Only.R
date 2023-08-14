@@ -168,35 +168,6 @@ BIO19.data$BIO19 <- raster::extract(BIO19, samples)
 
 
 
-# Cattle Abundance
-
-Cattle.Aw<- raster("Rasters/6_Ct_2010_Aw_reprojected.tif")
-Cattle.Aw.data <- samples
-Cattle.Aw.data$Cattle.Aw <- raster::extract(Cattle.Aw, samples)
-
-# Sheep Abundance
-
-Sheep.Aw<- raster("Rasters/6_Sh_2010_Aw_reprojected.tif")
-Sheep.Aw.data <- samples
-Sheep.Aw.data$Sheep.Aw <- raster::extract(Sheep.Aw, samples)
-
-# Goats Abundance 
-
-Goat.Aw<- raster("Rasters/6_Gt_2010_Aw_reprojected.tif")
-Goat.Aw.data <- samples
-Goat.Aw.data$Goat.Aw <- raster::extract(Goat.Aw, samples)
-
-# Total livestock Abundance
-
-Total.livestock.Aw.data <- samples
-Total.livestock.Aw.data$Total.livestock.Aw <- Cattle.Aw.data$Cattle.Aw+Sheep.Aw.data$Sheep.Aw+Goat.Aw.data$Goat.Aw
-
-# Human Footprint
-
-Human.footprint<- raster("Rasters/wildareas-v3-2009-human-footprint_reprojected.tif")
-Human.footprint.data <- samples
-Human.footprint.data$Human.footprint <- raster::extract(Human.footprint, samples)
-
 # Land Use Cover 
 
 Land.Cover <- raster("Rasters/GLC_SHV10_DOM_reprojected_10arcminutes.tif")
@@ -223,11 +194,11 @@ ggplot(data = Land.Cover.data, aes(x=lon, y=lat, color=Land.Cover))+geom_point(s
 #Reset the working directory
 final.dataframe <- data.frame(presence.absence, BIO1.data, BIO2.data, BIO3.data,BIO4.data,BIO5.data, 
                               BIO6.data, BIO7.data, BIO8.data, BIO9.data, BIO10.data, BIO11.data, BIO12.data, BIO13.data, BIO14.data, BIO15.data, BIO16.data, 
-                              BIO17.data, BIO18.data,BIO19.data,Total.livestock.Aw.data,Human.footprint.data,Land.Cover.data)
+                              BIO17.data, BIO18.data,BIO19.data,Land.Cover.data)
 View(final.dataframe)
 drops <- c("lat", "lon","lat.1", "lon.1","lat.2", "lon.2","lat.3", "lon.3","lat.4", "lon.4", "lat.5", "lon.5", "lat.6", "lon.6","lat.7", "lon.7", "lat.8", "lon.8","lat.9", "lon.9",
            "lat.10", "lon.10","lat.11", "lon.11", "lat.12", "lon.12","lat.13", "lon.13","lat.14", "lon.14","lat.15", "lon.15", "lat.16", "lon.16","lat.17", "lon.17",
-           "lat.18", "lon.18","lat.19", "lon.19","lat.20", "lon.20","lat.21", "lon.21")
+           "lat.18", "lon.18","lat.19", "lon.19")
 final.dataframe <- final.dataframe[ , !(names(final.dataframe) %in% drops)]
 write.csv(final.dataframe,"Data/Presab_plus_climate_variables_PROTECTEDAREASONLY_Res10arcminutes.csv", row.names = FALSE)
 
@@ -368,36 +339,6 @@ BIO19.data <- samples
 BIO19.data$BIO19 <- raster::extract(BIO19, samples)
 
 
-
-# Cattle Abundance
-
-Cattle.Aw<- raster("Rasters/6_Ct_2010_Aw_reprojected.tif")
-Cattle.Aw.data <- samples
-Cattle.Aw.data$Cattle.Aw <- raster::extract(Cattle.Aw, samples)
-
-# Sheep Abundance
-
-Sheep.Aw<- raster("Rasters/6_Sh_2010_Aw_reprojected.tif")
-Sheep.Aw.data <- samples
-Sheep.Aw.data$Sheep.Aw <- raster::extract(Sheep.Aw, samples)
-
-# Goats Abundance 
-
-Goat.Aw<- raster("Rasters/6_Gt_2010_Aw_reprojected.tif")
-Goat.Aw.data <- samples
-Goat.Aw.data$Goat.Aw <- raster::extract(Goat.Aw, samples)
-
-# Total livestock Abundance
-
-Total.livestock.Aw.data <- samples
-Total.livestock.Aw.data$Total.livestock.Aw <- Cattle.Aw.data$Cattle.Aw+Sheep.Aw.data$Sheep.Aw+Goat.Aw.data$Goat.Aw
-
-# Human Footprint
-
-Human.footprint<- raster("Rasters/wildareas-v3-2009-human-footprint_reprojected.tif")
-Human.footprint.data <- samples
-Human.footprint.data$Human.footprint <- raster::extract(Human.footprint, samples)
-
 # Land Use Cover 
 
 Land.Cover <- raster("Rasters/GLC_SHV10_DOM_reprojected_10arcminutes.tif")
@@ -424,11 +365,11 @@ ggplot(data = Land.Cover.data, aes(x=lon, y=lat, color=Land.Cover))+geom_point(s
 #Reset the working directory
 final.dataframe <- data.frame(presence.absence, BIO1.data, BIO2.data, BIO3.data,BIO4.data,BIO5.data, 
                               BIO6.data, BIO7.data, BIO8.data, BIO9.data, BIO10.data, BIO11.data, BIO12.data, BIO13.data, BIO14.data, BIO15.data, BIO16.data, 
-                              BIO17.data, BIO18.data,BIO19.data,Total.livestock.Aw.data,Human.footprint.data,Land.Cover.data)
+                              BIO17.data, BIO18.data,BIO19.data,Land.Cover.data)
 View(final.dataframe)
 drops <- c("lat", "lon","lat.1", "lon.1","lat.2", "lon.2","lat.3", "lon.3","lat.4", "lon.4", "lat.5", "lon.5", "lat.6", "lon.6","lat.7", "lon.7", "lat.8", "lon.8","lat.9", "lon.9",
            "lat.10", "lon.10","lat.11", "lon.11", "lat.12", "lon.12","lat.13", "lon.13","lat.14", "lon.14","lat.15", "lon.15", "lat.16", "lon.16","lat.17", "lon.17",
-           "lat.18", "lon.18","lat.19", "lon.19","lat.20", "lon.20","lat.21", "lon.21")
+           "lat.18", "lon.18","lat.19", "lon.19")
 final.dataframe <- final.dataframe[ , !(names(final.dataframe) %in% drops)]
 write.csv(final.dataframe,"Data/Presab_plus_climate_variables_PROTECTEDAREASONLY_Res10arcminutes_OpenHabitats.csv", row.names = FALSE)
 
@@ -596,11 +537,11 @@ ggplot(data = Land.Cover.data, aes(x=lon, y=lat, color=Land.Cover))+geom_point(s
 #Reset the working directory
 final.dataframe <- data.frame(presence.absence, BIO1.data, BIO2.data, BIO3.data,BIO4.data,BIO5.data, 
                               BIO6.data, BIO7.data, BIO8.data, BIO9.data, BIO10.data, BIO11.data, BIO12.data, BIO13.data, BIO14.data, BIO15.data, BIO16.data, 
-                              BIO17.data, BIO18.data,BIO19.data,Total.livestock.Aw.data,Human.footprint.data,Land.Cover.data)
+                              BIO17.data, BIO18.data,BIO19.data,Land.Cover.data)
 View(final.dataframe)
 drops <- c("lat", "lon","lat.1", "lon.1","lat.2", "lon.2","lat.3", "lon.3","lat.4", "lon.4", "lat.5", "lon.5", "lat.6", "lon.6","lat.7", "lon.7", "lat.8", "lon.8","lat.9", "lon.9",
            "lat.10", "lon.10","lat.11", "lon.11", "lat.12", "lon.12","lat.13", "lon.13","lat.14", "lon.14","lat.15", "lon.15", "lat.16", "lon.16","lat.17", "lon.17",
-           "lat.18", "lon.18","lat.19", "lon.19","lat.20", "lon.20","lat.21", "lon.21")
+           "lat.18", "lon.18","lat.19", "lon.19")
 final.dataframe <- final.dataframe[ , !(names(final.dataframe) %in% drops)]
 write.csv(final.dataframe,"Data/Presab_plus_climate_variables_PROTECTEDAREASONLY_Res10arcminutes_TropicalForests.csv", row.names = FALSE)
 
