@@ -95,22 +95,28 @@ ggplot(data = da.TropicalForests, aes(x=Longitude.x., y=Latitude.y., color=Land.
 
 Y.10m=data.frame(da.10m %>% select(3:95)) # Select dependent variables, i.e. presence absence data for 93 species
 
-Y.10m <- Y.10m %>% select_if((colMeans(Y.10m)>=0.05)) # select only columns with average greater than 0.1, i.e. exclude species with very small distributions
-Y.10m <- Y.10m %>% select(-c("Diceros.bicornis")) # Exclude rhinos species - presence or absence is done by country for these species and therefore do not reflect the true distribution
+Y.10m <- Y.10m %>% select_if((colMeans(Y.10m)>=0.025)) # select only columns with average greater than 0.1, i.e. exclude species with very small distributions
+Y.10m <- Y.10m %>% select(-c("Diceros.bicornis","Ceratotherium.simum")) # Exclude rhinos species - presence or absence is done by country for these species and therefore do not reflect the true distribution
 
 
 
 Y.OpenHabitats=data.frame(da.OpenHabitats %>% select(3:90)) # Select dependent variables, i.e. presence absence data for 88 species
 
-Y.OpenHabitats <- Y.OpenHabitats %>% select_if((colMeans(Y.OpenHabitats)>=0.05)) # select only columns with average greater than 0.1, i.e. exclude species with very small distributions
+Y.OpenHabitats <- Y.OpenHabitats %>% select_if((colMeans(Y.OpenHabitats)>=0.025)) # select only columns with average greater than 0.1, i.e. exclude species with very small distributions
 Y.OpenHabitats <- Y.OpenHabitats %>% select(-c("Diceros.bicornis","Ceratotherium.simum")) # Exclude rhinos species - presence or absence is done by country for these species and therefore do not reflect the true distribution
 
 
 Y.TropicalForests=data.frame(da.TropicalForests %>% select(3:69)) # Select dependent variables, i.e. presence absence data for 67 species
 
-Y.TropicalForests <- Y.TropicalForests %>% select_if((colMeans(Y.TropicalForests)>=0.05)) # select only columns with average greater than 0.1, i.e. exclude species with very small distributions
+Y.TropicalForests <- Y.TropicalForests %>% select_if((colMeans(Y.TropicalForests)>=0.025)) # select only columns with average greater than 0.1, i.e. exclude species with very small distributions
 Y.TropicalForests <- Y.TropicalForests %>% select(-c("Diceros.bicornis")) # Exclude rhinos species - presence or absence is done by country for these species and therefore do not reflect the true distribution
-
+Y.TropicalForests <- Y.TropicalForests %>% select(-c("Giraffa.camelopardalis", "Oreotragus.oreotragus","Alcelaphus.buselaphus",
+                                                     "Redunca.fulvorufula", "Kobus.kob", "Redunca.redunca", "Redunca.arundinum",
+                                                     "Equus.quagga", "Madoqua.kirkii", "Phacochoerus.africanus",
+                                                     "Tragelaphus.strepsiceros", "Aepyceros.melampus","Sylvicapra.grimmia",
+                                                     "Kobus.ellipsiprymnus","Tragelaphus.oryx","Loxodonta.africana","Hippotragus.equinus",
+                                                     "Nanger.granti","Hippotragus.niger",
+                                                     "Ourebia.ourebi","Raphicerus.campestris"))
 
 # Organize the environmental data into a dataframe XData
 
@@ -121,9 +127,9 @@ XData.TropicalForests <- data.frame(temp=da.TropicalForests$BIO1, hot=da.Tropica
 # Check for multicollinearity - Precip Range has high VIF so exclude and rerun
 library(car)
 corr.check.Tropical.Forest<-lm(hot~temp+precip + mean.diurnal.range+precip.seasonality, data = XData.TropicalForests)
-vif(corr.check.Tropical.Forest)
+vif(corr.check.Tropical.Forest) #1.184031           1.160098           1.097232           1.052262
 corr.check.OpenHabitats<-lm(hot~temp+precip + mean.diurnal.range+precip.seasonality, data = XData.OpenHabitats)
-vif(corr.check.OpenHabitats )
+vif(corr.check.OpenHabitats ) #1.305686           1.351249           1.164116           1.11318
 
 
 
