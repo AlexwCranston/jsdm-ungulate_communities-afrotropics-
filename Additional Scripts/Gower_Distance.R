@@ -22,9 +22,9 @@ rownames(gower)<-data$Binomial
 colnames(gower)<-data$Binomial
 
 supportLevel=0.95
-postOmega = getPostEstimate(models[[2]], parName ="Omega")
+postOmega = getPostEstimate(models[[3]], parName ="Omega")
 Omega.toPlot = ((postOmega[[2]]> supportLevel) + (postOmega[[2]] < (1-supportLevel)) > 0) * postOmega[[1]]
-colnames(Omega.toPlot)<-colnames(models[[2]]$Y)
+colnames(Omega.toPlot)<-colnames(models[[3]]$Y)
 rownames(Omega.toPlot)<-colnames(Omega.toPlot)
 
 

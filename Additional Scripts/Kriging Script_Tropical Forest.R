@@ -95,10 +95,12 @@ africa.merc<-as(africa.merc, 'Spatial') # Convert back to polygon
 
 eta_points_projected<-as.data.frame(eta_V1_projected) # Make eta a dataframe again
 
+limit.1<- max(abs(interpolation.output$z)) * c(-1, 1)
+
 V1.plot<-ggplot()+ 
   geom_polygon(data = africa.merc, aes(x = long, y = lat, group = group), colour = "black", fill = "black", size=0)+
   geom_tile(data=interpolation.output,mapping=aes(x,y,fill=z))+
-  scale_fill_gradientn(colours = c("darkorchid4","darkorchid2","darkorchid1","white","chartreuse","chartreuse2","chartreuse4"), name = "",limits=c(-5.08, 5.08))+
+  scale_fill_gradientn(colours = c("darkorchid4","darkorchid2","darkorchid1","white","chartreuse","chartreuse2","chartreuse4"), name = "",limits=limit.1)+
   geom_polygon(data = africa.merc, aes(x = long, y = lat, group = group), colour = "black", fill = "NA", size=1)+
   theme_bw()+
   theme(axis.text.x=element_blank(),
@@ -133,12 +135,13 @@ interpolation.output.2=as.data.frame(krg.output.2)
 names(interpolation.output.2)[1:3]<-c("x","y","z")
 
 eta_points_projected<-as.data.frame(eta_V2_projected) # Make eta a dataframe again
+limit.2<- max(abs(interpolation.output.2$z)) * c(-1, 1)
 
 
 V2.plot<-ggplot()+ 
   geom_polygon(data = africa.merc, aes(x = long, y = lat, group = group), colour = "black", fill = "black", size=0)+
   geom_tile(data=interpolation.output.2,mapping=aes(x,y,fill=z))+
-  scale_fill_gradientn(colours = c("darkorchid4","darkorchid2","darkorchid1","white","chartreuse","chartreuse2","chartreuse4"), name = "",limits=c(-5.08, 5.08))+
+  scale_fill_gradientn(colours = c("darkorchid4","darkorchid2","darkorchid1","white","chartreuse","chartreuse2","chartreuse4"), name = "",limits=limit.2)+
   geom_polygon(data = africa.merc, aes(x = long, y = lat, group = group), colour = "black", fill = "NA", size=1)+
   theme_bw()+
   theme(axis.text.x=element_blank(),

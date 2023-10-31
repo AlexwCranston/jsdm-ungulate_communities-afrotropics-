@@ -81,12 +81,12 @@ africa.merc<-as(africa.merc, 'Spatial') # Convert back to polygon
 
 eta_points_projected<-as.data.frame(eta_V1_projected) # Make eta a dataframe again
 
-limit <- max(abs(interpolation.output$z)) * c(-1, 1)
+limit.1 <- max(abs(interpolation.output$z)) * c(-1, 1)
 
 V1.plot<-ggplot()+ 
   geom_polygon(data = africa.merc, aes(x = long, y = lat, group = group), colour = "black", fill = "black", size=0)+
   geom_raster(data=interpolation.output,mapping=aes(x,y,fill=z))+
-  scale_fill_gradientn(colours = c("darkorchid4","darkorchid2","darkorchid1","white","chartreuse","chartreuse2","chartreuse4"), name = "",limits=limit.2)+
+  scale_fill_gradientn(colours = c("darkorchid4","darkorchid2","darkorchid1","white","chartreuse","chartreuse2","chartreuse4"), name = "",limits=limit.1)+
   geom_polygon(data = africa.merc, aes(x = long, y = lat, group = group), colour = "black", fill = "NA", size=1)+
   theme_bw()+
   theme(axis.text.x=element_blank(),
@@ -138,5 +138,43 @@ V2.plot<-ggplot()+
   geom_point(data = eta_points_projected.2, aes(x=Longitude, y=Latitude),shape=1,size=2)
 
 #1065*672
+
+#### Repeat for third latent variable
+
+
+eta_V3_projected <- eta[,c(1:2,5)] #Take just first variable
+coordinates(eta_V3_projected) <- c("Longitude", "Latitude") #Turn back into spdf
+proj4string(eta_V3_projected) <- CRS("+proj=longlat +datum=WGS84")  ## Add crs info
+
+eta_V3_projected <- spTransform(eta_V3_projected, CRS("+proj=merc +datum=WGS84")) # Transform from long lat to merc projection
+
+
+# No reed to creat a new grid from kriging, we can use the existing one
+
+kriging_result.3 = autoKrige(V3~1, eta_V3_projected, grid.1) # Run autokrige
+plot(kriging_result.3) # Check result makes sense
+krg.output.3=as.data.frame(kriging_result.3$krige_output)
+interpolation.output.3=as.data.frame(krg.output.3)
+names(interpolation.output.3)[1:3]<-c("x","y","z") # Change names to easier ones
+
+eta_points_projected.3<-as.data.frame(eta_V3_projected) # Make eta a dataframe again
+
+limit.3 <- max(abs(interpolation.output.3$z)) * c(-1, 1)
+
+V3.plot<-ggplot()+ 
+  geom_polygon(data = africa.merc, aes(x = long, y = lat, group = group), colour = "black", fill = "black", size=0)+
+  geom_raster(data=interpolation.output.3,mapping=aes(x,y,fill=z))+
+  scale_fill_gradientn(colours = c("darkorchid4","darkorchid2","darkorchid1","white","chartreuse","chartreuse2","chartreuse4"), name = "",limits=limit.3)+
+  geom_polygon(data = africa.merc, aes(x = long, y = lat, group = group), colour = "black", fill = "NA", size=1)+
+  theme_bw()+
+  theme(axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank(), plot.title = element_text(hjust = 0.5, size=25,face="bold"),
+        legend.text = element_text(size=15,face="bold"),
+        axis.title  = element_blank(),
+        panel.border = element_blank(),
+        panel.grid = element_blank())+
+  geom_point(data = eta_points_projected.3, aes(x=Longitude, y=Latitude),shape=1,size=2)
 
 
