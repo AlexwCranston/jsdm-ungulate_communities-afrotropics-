@@ -9,33 +9,33 @@ Model.africa.PAsonly.10arcminutes_normal_FINALRUN
 
 beta
 
-Min.   : 0.984  
-1st Qu.: 1.854  
-Median : 2.519  
-Mean   : 3.089  
-3rd Qu.: 3.509  
-Max.   :16.710  
+Min.   : 1.014  
+1st Qu.: 2.352  
+Median : 3.947  
+Mean   : 4.956  
+3rd Qu.: 6.679  
+Max.   :21.436  
 
 gamma
 
-Min.   :1.572  
-1st Qu.:1.633  
-Median :2.306  
-Mean   :2.487  
-3rd Qu.:3.196  
-Max.   :3.644  
+Min.   :2.039  
+1st Qu.:2.599  
+Median :3.645  
+Mean   :3.640  
+3rd Qu.:5.064  
+Max.   :5.248  
 
 omega
 
 
 ID
 
-Min.   :1.019  
-1st Qu.:1.981  
-Median :2.642  
-Mean   :3.062  
-3rd Qu.:3.881  
-Max.   :9.941  
+Min.   : 1.119  
+1st Qu.: 2.337  
+Median : 3.332  
+Mean   : 3.931  
+3rd Qu.: 4.767  
+Max.   :17.546  
 
 alpha
 
@@ -43,41 +43,41 @@ alpha
 
 ID
 
-1.340026
-NaN
+4.350951
+5.899978
 
 Model.africa.PAsonly.10arcminutes_OpenHabitats_FINALRUN
 
 
 beta
 
-Min.   : 1.082  
-1st Qu.: 2.241  
-Median : 3.293  
-Mean   : 3.815  
-3rd Qu.: 4.696  
-Max.   :18.056  
+Min.   : 0.936  
+1st Qu.: 2.115  
+Median : 3.115  
+Mean   : 4.115  
+3rd Qu.: 5.016  
+Max.   :31.470  
 
 gamma
 
-Min.   :1.514  
-1st Qu.:2.547  
-Median :4.462  
-Mean   :3.585  
-3rd Qu.:4.666  
-Max.   :5.325  
+Min.   :2.192  
+1st Qu.:2.902  
+Median :3.368  
+Mean   :3.700  
+3rd Qu.:4.252  
+Max.   :5.687  
 
 omega
 
 
 ID
 
-Min.   : 1.516  
-1st Qu.: 2.634  
-Median : 3.973  
-Mean   : 4.424  
-3rd Qu.: 5.279  
-Max.   :24.290  
+Min.   : 1.174  
+1st Qu.: 2.581  
+Median : 3.630  
+Mean   : 4.319  
+3rd Qu.: 5.024  
+Max.   :16.201  
 
 alpha
 
@@ -85,41 +85,41 @@ alpha
 
 ID
 
-1.90723
-3.112402
+1.412111
+9.851573
 
 Model.africa.PAsonly.10arcminutes_TropicalForests_FINALRUN
 
 
 beta
 
-Min.   : 0.9539  
-1st Qu.: 2.1362  
-Median : 3.1531  
-Mean   : 4.1302  
-3rd Qu.: 5.2086  
-Max.   :23.5309  
+Min.   : 1.028  
+1st Qu.: 2.894  
+Median : 4.191  
+Mean   : 6.212  
+3rd Qu.: 7.427  
+Max.   :33.066  
 
 gamma
 
-Min.   :1.090  
-1st Qu.:1.550  
-Median :2.038  
-Mean   :2.484  
-3rd Qu.:3.157  
-Max.   :5.623  
+Min.   :1.280  
+1st Qu.:1.667  
+Median :2.346  
+Mean   :2.335  
+3rd Qu.:2.740  
+Max.   :3.827  
 
 omega
 
 
 ID
 
-Min.   : 1.150  
-1st Qu.: 2.485  
-Median : 3.415  
-Mean   : 4.572  
-3rd Qu.: 5.227  
-Max.   :19.716  
+Min.   : 1.211  
+1st Qu.: 2.702  
+Median : 4.041  
+Mean   : 6.573  
+3rd Qu.: 8.260  
+Max.   :27.045  
 
 alpha
 
@@ -127,8 +127,8 @@ alpha
 
 ID
 
-2.928524
-4.122683
+2.378098
+Inf
 
 ./models/models_thin_1_samples_250_chains_4_FINALRUN.Rdata
 
@@ -138,33 +138,33 @@ Model.africa.PAsonly.10arcminutes_normal_FINALRUN
 
 beta
 
-Min.   :1.003  
-1st Qu.:1.071  
-Median :1.151  
-Mean   :1.262  
-3rd Qu.:1.350  
-Max.   :2.726  
+Min.   :1.004  
+1st Qu.:1.096  
+Median :1.195  
+Mean   :1.311  
+3rd Qu.:1.396  
+Max.   :2.851  
 
 gamma
 
-Min.   :1.021  
-1st Qu.:1.038  
-Median :1.048  
-Mean   :1.143  
-3rd Qu.:1.070  
-Max.   :1.702  
+Min.   :1.041  
+1st Qu.:1.042  
+Median :1.045  
+Mean   :1.072  
+3rd Qu.:1.095  
+Max.   :1.169  
 
 omega
 
 
 ID
 
-Min.   :1.009  
-1st Qu.:1.103  
-Median :1.217  
-Mean   :1.263  
-3rd Qu.:1.356  
-Max.   :2.167  
+Min.   :1.010  
+1st Qu.:1.104  
+Median :1.184  
+Mean   :1.217  
+3rd Qu.:1.274  
+Max.   :1.778  
 
 alpha
 
@@ -172,9 +172,8 @@ alpha
 
 ID
 
-1.057993
-1.57251
-NaN
+1.283906
+1.298211
 NaN
 NaN
 
@@ -183,33 +182,33 @@ Model.africa.PAsonly.10arcminutes_OpenHabitats_FINALRUN
 
 beta
 
-Min.   : 1.009  
-1st Qu.: 1.157  
-Median : 1.308  
-Mean   : 1.711  
-3rd Qu.: 1.686  
-Max.   :13.097  
+Min.   :1.001  
+1st Qu.:1.126  
+Median :1.262  
+Mean   :1.423  
+3rd Qu.:1.499  
+Max.   :4.526  
 
 gamma
 
-Min.   :1.035  
-1st Qu.:1.066  
-Median :1.117  
-Mean   :1.188  
-3rd Qu.:1.228  
-Max.   :1.539  
+Min.   :1.016  
+1st Qu.:1.024  
+Median :1.094  
+Mean   :1.298  
+3rd Qu.:1.524  
+Max.   :1.994  
 
 omega
 
 
 ID
 
-Min.   :1.029  
-1st Qu.:1.408  
-Median :1.774  
-Mean   :2.145  
-3rd Qu.:2.456  
-Max.   :6.389  
+Min.   :1.043  
+1st Qu.:1.214  
+Median :1.575  
+Mean   :1.631  
+3rd Qu.:1.932  
+Max.   :2.656  
 
 alpha
 
@@ -217,8 +216,8 @@ alpha
 
 ID
 
-1.175663
-8.053797
+1.032458
+2.815143
 NaN
 NaN
 NaN
@@ -228,33 +227,33 @@ Model.africa.PAsonly.10arcminutes_TropicalForests_FINALRUN
 
 beta
 
-Min.   :1.019  
-1st Qu.:1.161  
-Median :1.322  
-Mean   :1.615  
-3rd Qu.:1.771  
-Max.   :5.518  
+Min.   : 1.031  
+1st Qu.: 1.491  
+Median : 2.125  
+Mean   : 3.142  
+3rd Qu.: 3.019  
+Max.   :17.452  
 
 gamma
 
-Min.   :1.027  
-1st Qu.:1.095  
-Median :1.125  
-Mean   :1.140  
-3rd Qu.:1.186  
-Max.   :1.255  
+Min.   :1.054  
+1st Qu.:1.097  
+Median :1.117  
+Mean   :1.129  
+3rd Qu.:1.165  
+Max.   :1.225  
 
 omega
 
 
 ID
 
-Min.   :1.024  
-1st Qu.:1.409  
-Median :1.658  
-Mean   :2.259  
-3rd Qu.:2.835  
-Max.   :6.397  
+Min.   :1.222  
+1st Qu.:2.095  
+Median :2.768  
+Mean   :3.005  
+3rd Qu.:3.576  
+Max.   :7.452  
 
 alpha
 
@@ -262,8 +261,8 @@ alpha
 
 ID
 
-1.660308
-1.683973
+1.448515
+NaN
 NaN
 NaN
 NaN
@@ -276,33 +275,33 @@ Model.africa.PAsonly.10arcminutes_normal_FINALRUN
 
 beta
 
-Min.   :0.9982  
-1st Qu.:1.0222  
-Median :1.0443  
-Mean   :1.0723  
-3rd Qu.:1.1024  
-Max.   :1.4541  
+Min.   :1.001  
+1st Qu.:1.026  
+Median :1.053  
+Mean   :1.084  
+3rd Qu.:1.110  
+Max.   :1.664  
 
 gamma
 
-Min.   :1.002  
-1st Qu.:1.005  
-Median :1.028  
-Mean   :1.045  
-3rd Qu.:1.076  
-Max.   :1.127  
+Min.   :1.033  
+1st Qu.:1.039  
+Median :1.083  
+Mean   :1.092  
+3rd Qu.:1.126  
+Max.   :1.223  
 
 omega
 
 
 ID
 
-Min.   :0.9993  
-1st Qu.:1.0588  
-Median :1.1110  
-Mean   :1.1678  
-3rd Qu.:1.2081  
-Max.   :1.9318  
+Min.   :1.003  
+1st Qu.:1.063  
+Median :1.137  
+Mean   :1.194  
+3rd Qu.:1.278  
+Max.   :2.106  
 
 alpha
 
@@ -310,8 +309,8 @@ alpha
 
 ID
 
-1.193412
-1.364783
+1.137127
+1.337439
 NaN
 NaN
 NaN
@@ -321,33 +320,33 @@ Model.africa.PAsonly.10arcminutes_OpenHabitats_FINALRUN
 
 beta
 
-Min.   :0.9998  
-1st Qu.:1.0190  
-Median :1.0392  
-Mean   :1.0598  
-3rd Qu.:1.0707  
-Max.   :1.5318  
+Min.   :0.9991  
+1st Qu.:1.0131  
+Median :1.0287  
+Mean   :1.0412  
+3rd Qu.:1.0513  
+Max.   :1.2750  
 
 gamma
 
 Min.   :0.9995  
-1st Qu.:1.0046  
-Median :1.0238  
-Mean   :1.0521  
-3rd Qu.:1.0355  
-Max.   :1.2769  
+1st Qu.:1.0015  
+Median :1.0069  
+Mean   :1.0176  
+3rd Qu.:1.0264  
+Max.   :1.0584  
 
 omega
 
 
 ID
 
-Min.   :1.006  
-1st Qu.:1.095  
-Median :1.192  
-Mean   :1.209  
-3rd Qu.:1.298  
-Max.   :1.633  
+Min.   :1.002  
+1st Qu.:1.028  
+Median :1.059  
+Mean   :1.098  
+3rd Qu.:1.133  
+Max.   :1.617  
 
 alpha
 
@@ -355,8 +354,8 @@ alpha
 
 ID
 
-1.073258
-1.317583
+1.078955
+1.01841
 NaN
 NaN
 NaN
@@ -366,33 +365,33 @@ Model.africa.PAsonly.10arcminutes_TropicalForests_FINALRUN
 
 beta
 
-Min.   :1.003  
-1st Qu.:1.046  
-Median :1.092  
-Mean   :1.144  
-3rd Qu.:1.210  
-Max.   :1.663  
+Min.   :0.9992  
+1st Qu.:1.0309  
+Median :1.0664  
+Mean   :1.0930  
+3rd Qu.:1.1230  
+Max.   :1.4999  
 
 gamma
 
-Min.   :1.014  
-1st Qu.:1.016  
-Median :1.025  
-Mean   :1.033  
-3rd Qu.:1.042  
-Max.   :1.068  
+Min.   :1.000  
+1st Qu.:1.003  
+Median :1.006  
+Mean   :1.012  
+3rd Qu.:1.021  
+Max.   :1.026  
 
 omega
 
 
 ID
 
-Min.   :1.106  
-1st Qu.:1.294  
-Median :1.459  
-Mean   :1.518  
-3rd Qu.:1.668  
-Max.   :2.758  
+Min.   :1.010  
+1st Qu.:1.054  
+Median :1.122  
+Mean   :1.232  
+3rd Qu.:1.365  
+Max.   :1.883  
 
 alpha
 
@@ -400,8 +399,8 @@ alpha
 
 ID
 
-1.467156
-1.992521
+1.162694
+NaN
 NaN
 NaN
 NaN
@@ -414,33 +413,33 @@ Model.africa.PAsonly.10arcminutes_normal_FINALRUN
 
 beta
 
-Min.   :0.9979  
-1st Qu.:1.0036  
-Median :1.0088  
-Mean   :1.0147  
-3rd Qu.:1.0162  
-Max.   :1.2371  
+Min.   :1.001  
+1st Qu.:1.021  
+Median :1.045  
+Mean   :1.092  
+3rd Qu.:1.124  
+Max.   :1.701  
 
 gamma
 
-Min.   :1.005  
-1st Qu.:1.009  
-Median :1.011  
-Mean   :1.021  
-3rd Qu.:1.027  
-Max.   :1.065  
+Min.   :1.000  
+1st Qu.:1.007  
+Median :1.013  
+Mean   :1.033  
+3rd Qu.:1.033  
+Max.   :1.163  
 
 omega
 
 
 ID
 
-Min.   :1.001  
-1st Qu.:1.012  
-Median :1.026  
-Mean   :1.082  
-3rd Qu.:1.084  
-Max.   :1.611  
+Min.   :1.011  
+1st Qu.:1.231  
+Median :1.426  
+Mean   :1.557  
+3rd Qu.:1.849  
+Max.   :3.274  
 
 alpha
 
@@ -448,8 +447,9 @@ alpha
 
 ID
 
-1.022486
-1.038573
+1.360684
+1.972023
+4.521239
 NaN
 NaN
 NaN
@@ -459,33 +459,33 @@ Model.africa.PAsonly.10arcminutes_OpenHabitats_FINALRUN
 
 beta
 
-Min.   :0.9975  
-1st Qu.:1.0061  
-Median :1.0147  
-Mean   :1.0225  
-3rd Qu.:1.0308  
-Max.   :1.1578  
+Min.   :1.001  
+1st Qu.:1.027  
+Median :1.058  
+Mean   :1.131  
+3rd Qu.:1.137  
+Max.   :3.678  
 
 gamma
 
-Min.   :1.002  
-1st Qu.:1.007  
-Median :1.011  
-Mean   :1.022  
-3rd Qu.:1.025  
-Max.   :1.074  
+Min.   :1.004  
+1st Qu.:1.013  
+Median :1.102  
+Mean   :1.080  
+3rd Qu.:1.133  
+Max.   :1.177  
 
 omega
 
 
 ID
 
-Min.   :1.001  
-1st Qu.:1.090  
-Median :1.242  
-Mean   :1.341  
-3rd Qu.:1.494  
-Max.   :2.587  
+Min.   :1.055  
+1st Qu.:1.262  
+Median :1.446  
+Mean   :1.583  
+3rd Qu.:1.807  
+Max.   :3.447  
 
 alpha
 
@@ -493,9 +493,9 @@ alpha
 
 ID
 
-1.035107
-1.148975
-NaN
+2.609247
+2.144687
+8.565602
 NaN
 NaN
 NaN
@@ -505,33 +505,33 @@ Model.africa.PAsonly.10arcminutes_TropicalForests_FINALRUN
 
 beta
 
-Min.   :0.9981  
-1st Qu.:1.0253  
-Median :1.0495  
-Mean   :1.0814  
-3rd Qu.:1.1069  
-Max.   :1.5080  
+Min.   :0.9993  
+1st Qu.:1.0151  
+Median :1.0286  
+Mean   :1.0480  
+3rd Qu.:1.0548  
+Max.   :1.4012  
 
 gamma
 
-Min.   :1.007  
-1st Qu.:1.008  
-Median :1.018  
-Mean   :1.035  
-3rd Qu.:1.028  
-Max.   :1.123  
+Min.   :0.9991  
+1st Qu.:1.0030  
+Median :1.0048  
+Mean   :1.0053  
+3rd Qu.:1.0082  
+Max.   :1.0120  
 
 omega
 
 
 ID
 
-Min.   :1.028  
-1st Qu.:1.092  
-Median :1.157  
-Mean   :1.224  
-3rd Qu.:1.251  
-Max.   :1.872  
+Min.   :1.021  
+1st Qu.:1.083  
+Median :1.199  
+Mean   :1.213  
+3rd Qu.:1.308  
+Max.   :1.646  
 
 alpha
 
@@ -539,8 +539,8 @@ alpha
 
 ID
 
-1.028486
-1.252799
+1.025933
+1.495566
 NaN
 NaN
 NaN
