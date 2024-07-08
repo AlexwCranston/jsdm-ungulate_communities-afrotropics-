@@ -12,15 +12,15 @@ To cite this repo: TBC
 
 ### Data Processing
 
-All code for data processing can be found in /Raw Data processing in the script **IUCN Script_Protected Areas Only.R**. This script takes spatial data on species distributions downloaded from the IUCN red list and converts it to a presence/absence matrix for all species downloaded, then crops this matrix to the area of interest for each model. Additionally, it extracts environmental data from a series of rasters covering a wide range of environmental variables for each point in the matrix. The IUCN spatial data download is also found in /Raw Data processing, as well as all spatial polygons used for cropping and also some plots.
+All code for data processing can be found in /Raw Data processing in the script **IUCN Script_Protected Areas Only.R**. This script takes spatial data on species distributions downloaded from the IUCN red list and converts it to a presence/absence matrix for all species downloaded, then crops this matrix to the area of interest for each model. Additionally, it extracts environmental data from a series of rasters covering a wide range of environmental variables for each point in the matrix. The IUCN spatial data download can be found in the linked Dryad repository, as well as all spatial polygons used for cropping and also some plots.
 
-The output of processing are contained in /Data. Note that there are three files of processed data and three models coded for in the pipeline but in order to avoid unnecessary repetition and focus on the most interesting findings, only the second and third biome specific models are discussed in the paper.
+The output of processing are also contained in the linked Dryad repository. Note that there are three files of processed data and three models coded for in the pipeline but in order to avoid unnecessary repetition and focus on the most interesting findings, only the second and third biome specific models are discussed in the paper.
 
 ### Analyses
 
 The main body of analyses are carried out using the HMSC pipeline in /HMSC Pipeline. These scripts have had minor modifications to fit this project but otherwise entirely use the original pipeline provide by HMSC authors, available [here](https://www.helsinki.fi/en/researchgroups/statistical-ecology/software/hmsc).
 
-This pipeline uses the three files of processed data located in /Data (Presab_plus_climate_variables_PROTECTEDAREASONLY_Res10arcminutes.csv) but more broadly requires presence/absence or abundance data for any numbers of species over any number of sample sites, with environmental data for all sites also required to act as independent variables in the model. Presence/absence and count data does not need to be complete for all species in all sites but environmental data (or any other data used as an independent variable) does need to be complete.
+This pipeline uses the three files of processed data located in the linked Dryad repository (Presab_plus_climate_variables_PROTECTEDAREASONLY_Res10arcminutes.csv etc) but more broadly requires presence/absence or abundance data for any numbers of species over any number of sample sites, with environmental data for all sites also required to act as independent variables in the model. Presence/absence and count data does not need to be complete for all species in all sites but environmental data (or any other data used as an independent variable) does need to be complete.
 
 The pipeline is divided into 7 scripts, the role of which are listed below:
 1. **S1_define_models_template_africa_PAsonly_FINALRUN.R** (Creates the unfitted HMSC models)
@@ -43,19 +43,6 @@ Code for all figures can be found in /Additional Scripts.
 
 Lastly, **All Graphs_exceptKriging.R** contains code for the correlation matrix plots (Figure 2 & 3). It also contains code for the raw (not interpolated) site loadings plots (Figure S1 & S2) found in the supplementary materials. Finally, it contains code calculating the fit of both models using Tjur R2 and assessing the relationship between species occupancy and explanatory power.
 
-### Other
-
-/Graphs contains all figures used in the paper.
-
-/Models contains all fitted and unfitted models used in the paper.
-
-/results contains result of analysis of MCMC convergence as well as plots showing explanatory and predictive power for all species in each model
-
-/Traits contains the trait data (**Trait Data_AllUngulates.csv**) used to calculate Gower's Distance between species.
-
-/Rasters contains all raster data extracted by **IUCN Script_Protected Areas Only.R**. Note that the majority of these variables are not used in the models defined in the HMSC pipeline but they are included here for the sake of completeness.
-
-/Manuscripts contains the final manuscripts for the paper and the supplementary material.
 ## Session Info
 
 Please see below for the output of devtools::session_info() used to perform the analyses for this paper.
