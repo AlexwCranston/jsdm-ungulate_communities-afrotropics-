@@ -2,7 +2,7 @@
 
 Authors: Alex Cranston, Natalie Cooper, Jakob Bro-Jorgensen
 
-This repository contains all code, data and fitted models related to the paper "Climatic Variables Alone do not Determine Ungulate Community Composition in the Afrotropics" analysing the assembly of ungulate communities in sub-Saharan Africa using joint species distribution modelling.
+This repository contains all code, data and fitted models related to the paper "Using joint species distribution modelling to identify climatic and non-climatic drivers of Afrotropical ungulate distributions" analysing the formation of ungulate species ranges in sub-Saharan Africa using joint species distribution modelling.
 
 To cite this paper: TBC
 
@@ -39,7 +39,7 @@ Code for all figures can be found in /Additional Scripts.
 
 **Kriging Script_TropicalForests.R** contains code for the Figure 5. This figure plots the site loadings values in the same manner as the previous Figure, except from the Tropical Forests model.
 
-Lastly, **All Graphs_exceptKriging.R** contains code for the correlation matrix plots (Figure 2), and the boxplots showing explained variance in both models attributable to the latent variables (Figure 1). It also contains code for the raw (not interpolated) site loadings plots (Figure S1 & S2) found in the supplementary materials. Finally, it contains code calculating the fit of both models using Tjur R2 and assessing the relationship between species occupancy and explanatory power.
+Lastly, **All Graphs_exceptKriging.R** contains code for the correlation matrix plots (Figure 2 & 3). It also contains code for the raw (not interpolated) site loadings plots (Figure S1 & S2) found in the supplementary materials. Finally, it contains code calculating the fit of both models using Tjur R2 and assessing the relationship between species occupancy and explanatory power.
 
 ### Other
 
