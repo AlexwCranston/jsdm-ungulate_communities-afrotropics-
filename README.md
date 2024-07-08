@@ -4,7 +4,7 @@ Authors: Alex Cranston, Natalie Cooper, Jakob Bro-Jorgensen
 
 This repository contains all code related to the paper "Using joint species distribution modelling to identify climatic and non-climatic drivers of Afrotropical ungulate distributions" analysing the formation of ungulate species ranges in sub-Saharan Africa using joint species distribution modelling.
 
-Data associated with this paper is available at: https://doi.org/10.5061/dryad.8pk0p2ntj
+Data associated with this paper to be used in conjunction with this code is available at: https://doi.org/10.5061/dryad.8pk0p2ntj
 
 To cite this paper: TBC
 
