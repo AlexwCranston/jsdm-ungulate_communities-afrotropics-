@@ -93,30 +93,27 @@ ggplot(data = da.TropicalForests, aes(x=Longitude.x., y=Latitude.y., color=Land.
 
 # Organize the community data in the matrix Y
 
-Y.10m=data.frame(da.10m %>% select(3:95)) # Select dependent variables, i.e. presence absence data for 93 species
+Y.10m=data.frame(da.10m %>% dplyr::select(3:95)) # Select dependent variables, i.e. presence absence data for 93 species
 
 Y.10m <- Y.10m %>% select_if((colMeans(Y.10m)>=0.025)) # select only columns with average greater than 0.1, i.e. exclude species with very small distributions
-Y.10m <- Y.10m %>% select(-c("Diceros.bicornis","Ceratotherium.simum")) # Exclude rhinos species - presence or absence is done by country for these species and therefore do not reflect the true distribution
 
 
 
-Y.OpenHabitats=data.frame(da.OpenHabitats %>% select(3:90)) # Select dependent variables, i.e. presence absence data for 88 species
+Y.OpenHabitats=data.frame(da.OpenHabitats %>% dplyr::select(3:93)) # Select dependent variables, i.e. presence absence data for 91 species
 
-Y.OpenHabitats <- Y.OpenHabitats %>% select_if((colMeans(Y.OpenHabitats)>=0.025)) # select only columns with average greater than 0.1, i.e. exclude species with very small distributions
-Y.OpenHabitats <- Y.OpenHabitats %>% select(-c("Diceros.bicornis","Ceratotherium.simum")) # Exclude rhinos species - presence or absence is done by country for these species and therefore do not reflect the true distribution
+Y.OpenHabitats <- Y.OpenHabitats %>% select_if((colMeans(Y.OpenHabitats)>=0.025)) # select only columns with average greater than 0.025, i.e. exclude species with very small distributions
+Y.OpenHabitats <- Y.OpenHabitats %>% dplyr::select(-c("Loxodonta.cyclotis", "Cephalophus.weynsi", "Cephalophus.dorsalis","Cephalophus.nigrifrons"))
 
-
-Y.TropicalForests=data.frame(da.TropicalForests %>% select(3:69)) # Select dependent variables, i.e. presence absence data for 67 species
+Y.TropicalForests=data.frame(da.TropicalForests %>% dplyr::select(3:71)) # Select dependent variables, i.e. presence absence data for 69 species
 
 Y.TropicalForests <- Y.TropicalForests %>% select_if((colMeans(Y.TropicalForests)>=0.025)) # select only columns with average greater than 0.1, i.e. exclude species with very small distributions
-Y.TropicalForests <- Y.TropicalForests %>% select(-c("Diceros.bicornis")) # Exclude rhinos species - presence or absence is done by country for these species and therefore do not reflect the true distribution
-Y.TropicalForests <- Y.TropicalForests %>% select(-c("Giraffa.camelopardalis", "Oreotragus.oreotragus","Alcelaphus.buselaphus",
+Y.TropicalForests <- Y.TropicalForests %>% dplyr::select(-c("Diceros.bicornis","Giraffa.camelopardalis", "Oreotragus.oreotragus","Alcelaphus.buselaphus",
                                                      "Redunca.fulvorufula", "Kobus.kob", "Redunca.redunca", "Redunca.arundinum",
                                                      "Equus.quagga", "Madoqua.kirkii", "Phacochoerus.africanus",
                                                      "Tragelaphus.strepsiceros", "Aepyceros.melampus","Sylvicapra.grimmia",
                                                      "Kobus.ellipsiprymnus","Tragelaphus.oryx","Loxodonta.africana","Hippotragus.equinus",
                                                      "Nanger.granti","Hippotragus.niger",
-                                                     "Ourebia.ourebi","Raphicerus.campestris"))
+                                                     "Ourebia.ourebi","Raphicerus.campestris","Raphicerus.sharpei", "Oryx.beisa", "Tragelaphus.imberbis"))
 
 # Organize the environmental data into a dataframe XData
 
@@ -229,8 +226,8 @@ m.TropicalForests = Hmsc(Y=Y.TropicalForests,
 # In the general case, we could have multiple models. We combine them into a list and given them names.
 # COMBINING AND SAVING MODELS (START)
 models = list(m.10m,m.OpenHabitats,m.TropicalForests)
-names(models) = c("Model.africa.PAsonly.10arcminutes_normal_FINALRUN","Model.africa.PAsonly.10arcminutes_OpenHabitats_FINALRUN","Model.africa.PAsonly.10arcminutes_TropicalForests_FINALRUN")
-save(models, file = file.path(modelDir, "unfitted_models_FINALRUN.RData"))
+names(models) = c("Model.africa.PAsonly.10arcminutes_normal_17April","Model.africa.PAsonly.10arcminutes_OpenHabitats_17April","Model.africa.PAsonly.10arcminutes_TropicalForests_17April")
+save(models, file = file.path(modelDir, "unfitted_models_17April.RData"))
 ##################################################################################################
 # COMBINING AND SAVING MODELS (END)
 ##################################################################################################

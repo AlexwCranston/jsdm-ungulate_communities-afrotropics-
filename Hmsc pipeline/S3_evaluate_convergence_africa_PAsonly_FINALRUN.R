@@ -98,7 +98,7 @@ while(Lst <= nst){
   filename = file.path(modelDir,paste("models_thin_", as.character(thin),
                                       "_samples_", as.character(samples),
                                       "_chains_",as.character(nChains),
-                                      "_FINALRUN",
+                                      "_17April",
                                       ".Rdata",sep = ""))
   if(file.exists(filename)){
     load(filename)

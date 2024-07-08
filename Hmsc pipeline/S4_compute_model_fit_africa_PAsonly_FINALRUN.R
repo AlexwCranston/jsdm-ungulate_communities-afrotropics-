@@ -69,13 +69,13 @@ while(Lst <= length(samples_list)){
   filename.in = file.path(modelDir,paste("models_thin_", as.character(thin),
                                          "_samples_", as.character(samples),
                                          "_chains_",as.character(nChains),
-                                         "_FINALRUN",
+                                         "_17April",
                                          ".Rdata",sep = ""))
   filename.out = file.path(modelDir,paste("MF_thin_", as.character(thin),
                                           "_samples_", as.character(samples),
                                           "_chains_",as.character(nChains),
                                           "_nfolds_", as.character(nfolds),
-                                          "_FINALRUN",
+                                          "_17April",
                                           ".Rdata",sep = ""))
   if(file.exists(filename.out)){
     print(paste0("thin = ",as.character(thin),"; samples = ",as.character(samples)))
@@ -88,7 +88,7 @@ while(Lst <= length(samples_list)){
       nm = length(models)
       
       MF = list()
-      MFCV = list()
+      #MFCV = list()
       WAIC = list()
       
       for(mi in 1:nm){
@@ -96,16 +96,17 @@ while(Lst <= length(samples_list)){
         m = models[[mi]]
         preds = computePredictedValues(m)
         MF[[mi]] = evaluateModelFit(hM=m, predY=preds)
-        partition = createPartition(m, nfolds = nfolds) #USE column = ...
-        preds = computePredictedValues(m,partition=partition, nParallel = nParallel)
-        MFCV[[mi]] = evaluateModelFit(hM=m, predY=preds)
+        #partition = createPartition(m, nfolds = nfolds) #USE column = ...
+        #preds = computePredictedValues(m,partition=partition, nParallel = nParallel)
+        #MFCV[[mi]] = evaluateModelFit(hM=m, predY=preds)
         WAIC[[mi]] = computeWAIC(m)
       }
       names(MF)=names(models)
-      names(MFCV)=names(models)
+      #names(MFCV)=names(models)
       names(WAIC)=names(models)
       
-      save(MF,MFCV,WAIC,file = filename.out)
+      save(MF,#MFCV,
+           WAIC,file = filename.out)
     }
   }
   Lst = Lst + 1

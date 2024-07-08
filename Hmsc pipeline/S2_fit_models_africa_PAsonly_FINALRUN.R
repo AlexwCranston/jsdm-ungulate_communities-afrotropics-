@@ -45,7 +45,7 @@ modelDir = file.path(localDir, "models")
 
 library(Hmsc)
 
-load(file=file.path(modelDir,"unfitted_models_FINALRUN.RData"))
+load(file=file.path(modelDir,"unfitted_models_17April.RData"))
 
 nm = length(models)
 samples_list = c(5,250,250,250)
@@ -60,7 +60,7 @@ while(Lst <= length(samples_list)){
   filename = file.path(modelDir,paste("models_thin_", as.character(thin),
                                              "_samples_", as.character(samples),
                                              "_chains_",as.character(nChains),
-                                             "_FINALRUN",  
+                                             "_17April",  
                                              ".Rdata",sep = ""))
   if(file.exists(filename)){
     print("model had been fitted already")

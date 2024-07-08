@@ -67,7 +67,7 @@ for (Lst in nst:1) {
                                       "_samples_", as.character(samples),
                                       "_chains_",as.character(nChains),
                                       "_nfolds_", as.character(nfolds),
-                                      "_FINALRUN",
+                                      "_17April",
                                       ".Rdata",sep = ""))
   if(file.exists(filename)){break}
 }
