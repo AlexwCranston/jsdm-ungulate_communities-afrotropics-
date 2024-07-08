@@ -1,4 +1,4 @@
-## Climatic Variables Alone do not Determine Ungulate Community Composition in the Afrotropics
+## Using joint species distribution modelling to identify climatic and non-climatic drivers of Afrotropical ungulate distributions
 
 Authors: Alex Cranston, Natalie Cooper, Jakob Bro-Jorgensen
 
