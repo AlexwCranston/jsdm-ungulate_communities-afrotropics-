@@ -8,7 +8,7 @@ Data associated with this paper to be used in conjunction with this code is avai
 
 To cite this paper: TBC
 
-To cite this repo: TBC
+To cite this repo: https://zenodo.org/doi/10.5281/zenodo.12739431
 
 ### Data Processing
 
