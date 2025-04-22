@@ -6,7 +6,7 @@ This repository contains all code related to the paper "Using joint species dist
 
 Data associated with this paper to be used in conjunction with this code is available at: https://doi.org/10.5061/dryad.8pk0p2ntj
 
-To cite this paper: TBC
+To cite this paper: Cranston, A., Cooper, N. and Bro-Jørgensen, J. (2024), Using joint species distribution modelling to identify climatic and non-climatic drivers of Afrotropical ungulate distributions. Ecography, 2024: e07209. https://doi.org/10.1111/ecog.07209
 
 To cite this repo: https://zenodo.org/doi/10.5281/zenodo.12739431
 
